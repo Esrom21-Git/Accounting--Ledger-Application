@@ -1,3 +1,6 @@
 Date,Type,Amount,Description
 2025-04-29,Deposit,1200.0,1100
 2025-04-29,Payment,100.0,90
+2025-05-01,Deposit,1200.0,23
+2025-05-01,Deposit,1200.0,
+2025-05-01,Payment,12300.0,12

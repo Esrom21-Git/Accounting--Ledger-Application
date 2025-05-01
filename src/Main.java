@@ -524,6 +524,7 @@ class FinancialTracker {
         }
 
         result.add(field.toString());
+
         return result.toArray(new String[0]);
     }
 }

@@ -454,51 +454,5 @@ class AccountingLedgerApplication {
         scanner.nextLine();
     }
 
-    // Display transaction header
-    private static void displayTransactionHeader() {
-        System.out.println("----------------------------------------------------------------------------------");
-        System.out.printf("%-10s | %-8s | %-20s | %-15s | %-10s\n", "Date", "Time", "Description", "Vendor", "Amount");
-        System.out.println("----------------------------------------------------------------------------------");
-    }
 
-    // Helper methods for user input
-    private static LocalDate promptForDate() {
-        System.out.print("Enter date (yyyy-MM-dd) or press Enter for today: ");
-        String input = scanner.nextLine().trim();
-        if (input.isEmpty()) {
-            return LocalDate.now();
-        }
-        try {
-            return LocalDate.parse(input, DATE_FORMATTER);
-        } catch (Exception e) {
-            System.out.println("Invalid date format. Using today's date.");
-            return LocalDate.now();
-        }
-    }
-
-    private static LocalTime promptForTime() {
-        System.out.print("Enter time (HH:mm:ss) or press Enter for now: ");
-        String input = scanner.nextLine().trim();
-        if (input.isEmpty()) {
-            return LocalTime.now();
-        }
-        try {
-            return LocalTime.parse(input, TIME_FORMATTER);
-        } catch (Exception e) {
-            System.out.println("Invalid time format. Using current time.");
-            return LocalTime.now();
-        }
-    }
-
-    private static double promptForAmount(String message) {
-        while (true) {
-            System.out.print(message);
-            String input = scanner.nextLine().trim();
-            try {
-                return Double.parseDouble(input);
-            } catch (NumberFormatException e) {
-                System.out.println("Invalid amount. Please enter a valid number.");
-            }
-        }
-    }
 }
