@@ -453,6 +453,11 @@ class AccountingLedgerApplication {
         System.out.println("\nPress Enter to continue...");
         scanner.nextLine();
     }
-
+    // Display transaction header
+    private static void displayTransactionHeader() {
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.printf("%-10s | %-8s | %-20s | %-15s | %-10s\n", "Date", "Time", "Description", "Vendor", "Amount");
+        System.out.println("----------------------------------------------------------------------------------");
+    }
 
 }
