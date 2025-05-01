@@ -5,7 +5,7 @@ This Java application implements a personal financial tracking system that:
 1.Records two types of transactions:
 
 Positive amounts (deposits/income)
-Negative amounts (payments/expenses)
+Negative amounts (payments/expenses) 
 
 
 2.Stores data using a CSV file format:
