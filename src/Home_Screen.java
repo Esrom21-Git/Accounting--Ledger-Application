@@ -487,5 +487,16 @@ class AccountingLedgerApplication {
             return LocalTime.now();
         }
     }
+    private static double promptForAmount(String message) {
+        while (true) {
+            System.out.print(message);
+            String input = scanner.nextLine().trim();
+            try {
+                return Double.parseDouble(input);
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid amount. Please enter a valid number.");
+            }
+        }
+    }
 }
 
