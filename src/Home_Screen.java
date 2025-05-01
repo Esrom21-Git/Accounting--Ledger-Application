@@ -474,5 +474,18 @@ class AccountingLedgerApplication {
         }
     }
 
+    private static LocalTime promptForTime() {
+        System.out.print("Enter time (HH:mm:ss) or press Enter for now: ");
+        String input = scanner.nextLine().trim();
+        if (input.isEmpty()) {
+            return LocalTime.now();
+        }
+        try {
+            return LocalTime.parse(input, TIME_FORMATTER);
+        } catch (Exception e) {
+            System.out.println("Invalid time format. Using current time.");
+            return LocalTime.now();
+        }
+    }
 }
 
