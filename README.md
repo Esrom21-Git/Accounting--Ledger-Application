@@ -17,9 +17,9 @@ Format: date|time|description|vendor|amount
 
 Provides a four-level menu hierarchy:
 
-Home Screen: Add Deposit, Make Payment, Ledger, Exit
-Ledger Screen: All Transactions, Deposits, Payments, Reports, Home
-Reports Screen: Month-to-Date, Previous Month, Year-to-Date, Previous Year, Search by Vendor
+Home Screen: Add Deposit, Make Payment, Ledger, Exit/
+Ledger Screen: All Transactions, Deposits, Payments, Reports, Home/
+Reports Screen: Month-to-Date, Previous Month, Year-to-Date, Previous Year, Search by Vendor/
 Transaction Entry: Date, Time, Description, Vendor, Amount input screens
 
     
