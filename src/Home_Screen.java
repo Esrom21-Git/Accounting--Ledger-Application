@@ -459,5 +459,20 @@ class AccountingLedgerApplication {
         System.out.printf("%-10s | %-8s | %-20s | %-15s | %-10s\n", "Date", "Time", "Description", "Vendor", "Amount");
         System.out.println("----------------------------------------------------------------------------------");
     }
+    // Helper methods for user input
+    private static LocalDate promptForDate() {
+        System.out.print("Enter date (yyyy-MM-dd) or press Enter for today: ");
+        String input = scanner.nextLine().trim();
+        if (input.isEmpty()) {
+            return LocalDate.now();
+        }
+        try {
+            return LocalDate.parse(input, DATE_FORMATTER);
+        } catch (Exception e) {
+            System.out.println("Invalid date format. Using today's date.");
+            return LocalDate.now();
+        }
+    }
 
 }
+
