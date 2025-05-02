@@ -78,5 +78,5 @@ Formatted transaction display
    
 ![Alt text](screenShoots/Screenshot1.png)
 ![Alt text](screenShoots/Screenshot2.png)
-![Alt text](screenShoots/Screenshot6.png)
+![Alt text](image/Screenshot6.png)
 
