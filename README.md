@@ -1,6 +1,6 @@
 #Accounting Ledger Application Analysis
 *Interesting Code Aspects
-The most fascinating aspect of this Java application is how it implements a complete accounting system with a clean architecture and data handling:
+The most fascinating aspect of this Java application is how it implements a complete accounting system with a clean architecture and data handling: 
 
 1. Immutable Transaction Class Design
 The Transaction class is designed as an immutable record-style class:
